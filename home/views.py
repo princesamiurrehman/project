@@ -12,7 +12,7 @@ def index(request):
     handle = Entrez.einfo(db="snp")
     result = Entrez.read(handle)
 
-    template = loader.get_template('home.html')
+    template = loader.get_template('index.html')
 
     context = {
 
